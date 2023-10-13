@@ -83,3 +83,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 2000);
   });
 });
+
+function resetarJogo() {
+    const tiles = document.querySelectorAll(".tile");
+    tiles.forEach(tile => {
+        tile.innerText = "";
+        tile.classList.remove("playerX", "playerO");
+    });
+    currentPlayer = "X";
+    gameOver = false;
+    document.querySelector(".display-player").innerText = currentPlayer;
+    document.querySelector(".announcer").classList.add("hide");
+    document.querySelector(".announcer").innerText = "";
+}
