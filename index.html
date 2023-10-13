@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <title>Seu Nome - Portfólio</title>
+</head>
+<body>
+    <header>
+        <h1 class="nome">Alan França</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <div class="conteudo-texto">
+            <h2>Bem-vindo ao meu site de portfólio!</h2>
+            <p class="namei"><br><br>Me chamo Alan de França Santos, sou Estudante de ADS.</p>
+            <p class="namei">Sou apaixonado por tecnologia e programação. Me sinto incrivel ao trabalhar em projetos criativos. E adoro desafios para assim eu colocar em prática oque eu aprendi.</p>
+            <p class="namei">Explore meu portfólio para ver alguns dos meus projetos mais recentes e entre em contato se você tiver alguma pergunta ou oportunidade de colaboração.</p>
+            <p class="jogo"><br><br><br><br><br><br><br><br><br>Aqui do lado está um Jogo da Velha para você jogar um pouco antes de me conhecer melhor.</p>
+        </div>
+
+        <div class="jogo-velha-container">
+          <div class="title">
+              <h1 class="gamename">Jogo da velha</h1>
+          </div>
+          <div class="display">
+              Vez do jogador <span class="display-player playerX">X</span>
+          </div>
+          <div class="container">
+              <div class="tile" onclick="fazerJogada(this)"></div>
+              <div class="tile" onclick="fazerJogada(this)"></div>
+              <div class="tile" onclick="fazerJogada(this)"></div>
+              <div class="tile" onclick="fazerJogada(this)"></div>
+              <div class="tile" onclick="fazerJogada(this)"></div>
+              <div class="tile" onclick="fazerJogada(this)"></div>
+              <div class="tile" onclick="fazerJogada(this)"></div>
+              <div class="tile" onclick="fazerJogada(this)"></div>
+              <div class="tile" onclick="fazerJogada(this)"></div>
+          </div>
+          <div class="display announcer hide"></div>
+          <div class="controls">
+              <button id="reset" onclick="resetarJogo()">Resetar</button>
+          </div>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
